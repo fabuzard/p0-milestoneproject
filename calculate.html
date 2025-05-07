@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="h-full flex flex-col">
-
+  </head>
+  <body class="h-full flex flex-col">
     <!-- Header Section -->
     <header
       class="px-4 md:px-8 lg:px-16 py-4 flex justify-between items-center h-16 relative"
@@ -22,7 +21,9 @@
       <nav class="hidden md:block">
         <ul class="flex space-x-4 lg:space-x-8 text-base lg:text-lg">
           <li>
-            <a href="./index.html" class="text-gray-800 hover:text-green-500">Home</a>
+            <a href="./index.html" class="text-gray-800 hover:text-green-500"
+              >Home</a
+            >
           </li>
           <li>
             <a href="./services.html" class="text-gray-800 hover:text-green-500"
@@ -40,12 +41,16 @@
             >
           </li>
           <li>
-            <a href="./contactus.html" class="text-gray-800 hover:text-green-500"
+            <a
+              href="./contactus.html"
+              class="text-gray-800 hover:text-green-500"
               >Contact Us</a
             >
           </li>
           <li>
-            <a href="./calculate.html" class="text-gray-800 hover:text-green-500"
+            <a
+              href="./calculate.html"
+              class="text-gray-800 hover:text-green-500"
               >Calculate</a
             >
           </li>
@@ -97,12 +102,16 @@
             >
           </li>
           <li class="py-2 border-b border-gray-100">
-            <a href="./gallery.html" class="text-gray-800 hover:text-green-500 block"
+            <a
+              href="./gallery.html"
+              class="text-gray-800 hover:text-green-500 block"
               >Gallery</a
             >
           </li>
           <li class="py-2 border-b border-gray-100">
-            <a href="./aboutus.html" class="text-gray-800 hover:text-green-500 block"
+            <a
+              href="./aboutus.html"
+              class="text-gray-800 hover:text-green-500 block"
               >About Us</a
             >
           </li>
@@ -114,12 +123,16 @@
             >
           </li>
           <li class="py-2 border-b border-gray-100">
-            <a href="./calculate.html" class="text-gray-800 hover:text-green-500 block"
+            <a
+              href="./calculate.html"
+              class="text-gray-800 hover:text-green-500 block"
               >Calculate</a
             >
           </li>
           <li class="py-2">
-            <a href="./login.html" class="text-gray-800 hover:text-green-500 block"
+            <a
+              href="./login.html"
+              class="text-gray-800 hover:text-green-500 block"
               >Login</a
             >
           </li>
@@ -127,32 +140,122 @@
       </div>
     </header>
 
-   <!-- Insert main here -->
-   <section id="main" class="px-4 py-8 md:px-8 lg:px-16 flex-grow">
-
-  </section>
-  
-
-      <footer
-    class="bg-green-900 px-4 md:px-8 lg:px-16 py-8 text-white"
-  >
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6 text-sm">
-      <!-- Company Info -->
-      <div class="flex flex-col gap-2">
-        <h1 class="text-xl text-green-400 font-bold">SwipeSquad</h1>
-        <p>Cleaning Service Company</p>
-        <p>Making your space shine since 2024.</p>
+    <!-- Insert main here -->
+    <section id="main" class="px-4 py-8 md:px-8 lg:px-16 flex-grow">
+      <div id="top-context" class="flex justify-center gap-40 border-b-2 pb-5">
+        <h1 class="font-bold text-4xl max-w-md">Calculate your discounts</h1>
+        <div id="text-container" class="text-left">
+          <h3 class="text-xl font-semibold">Promo</h3>
+          <p class="text-gray-500 max-w-md">
+            The more you order from us the cheaper it gets! What are you waiting
+            for? Calculate your discounts here
+          </p>
+        </div>
       </div>
-  
-      <!-- Footer Info -->
-      <div class="flex flex-col gap-2 text-gray-300">
-        <p>© 2025 SwipeSquad. All rights reserved.</p>
-        <p>Made with 💚 by Fabuzard</p>
-        <p>Terms & Conditions | Privacy Policy</p>
+
+      <!-- Services types card -->
+      <div id="calculate-form" class="my-20 flex gap-20 justify-center">
+        <!-- Discount Form -->
+        <form id="discountForm" class="space-y-6 max-w-md w-full">
+          <h2 class="text-lg font-semibold text-gray-800">
+            Discount Calculator
+          </h2>
+
+          <p class="text-sm text-gray-600">
+            💡 Price per session:
+            <span class="font-medium text-green-600">Rp125.000</span><br />
+            Discount Rules:<br />
+            - 3–4 sessions: 5% off<br />
+            - 5–9 sessions: 10% off<br />
+            - 10+ sessions: 20% off
+          </p>
+
+          <div>
+            <label
+              for="sessions"
+              class="block text-sm font-medium text-gray-700"
+              >Number of Sessions</label
+            >
+            <input
+              type="number"
+              id="sessions"
+              min="1"
+              required
+              class="w-full mt-1 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Enter number of sessions"
+            />
+          </div>
+
+          <div class="space-y-1 text-sm text-gray-700">
+            <p>
+              Total price (before discount): <span id="totalPrice">Rp0</span>
+            </p>
+            <p>Discount applied: <span id="discountAmount">0%</span></p>
+            <p class="font-semibold text-green-700">
+              Final price: <span id="finalPrice">Rp0</span>
+            </p>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-green-600 text-white font-semibold py-2 rounded hover:bg-green-700"
+          >
+            Calculate
+          </button>
+        </form>
+
+        <script>
+          const form = document.getElementById("discountForm");
+          const sessionsInput = document.getElementById("sessions");
+          const totalPriceEl = document.getElementById("totalPrice");
+          const discountAmountEl = document.getElementById("discountAmount");
+          const finalPriceEl = document.getElementById("finalPrice");
+
+          form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const sessions = parseInt(sessionsInput.value);
+            const pricePerSession = 125000;
+            let discount = 0;
+
+            if (sessions >= 10) {
+              discount = 0.2;
+            } else if (sessions >= 5) {
+              discount = 0.1;
+            } else if (sessions >= 3) {
+              discount = 0.05;
+            }
+
+            const total = sessions * pricePerSession;
+            const discounted = total - total * discount;
+
+            totalPriceEl.textContent = `Rp${total.toLocaleString("id-ID")}`;
+            discountAmountEl.textContent = `${discount * 100}%`;
+            finalPriceEl.textContent = `Rp${discounted.toLocaleString(
+              "id-ID"
+            )}`;
+          });
+        </script>
       </div>
-    </div>
-  </footer>
-  
-  
-</body>
+    </section>
+
+    <footer class="bg-green-900 px-4 md:px-8 lg:px-16 py-8 text-white">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6 text-sm"
+      >
+        <!-- Company Info -->
+        <div class="flex flex-col gap-2">
+          <h1 class="text-xl text-green-400 font-bold">SwipeSquad</h1>
+          <p>Cleaning Service Company</p>
+          <p>Making your space shine since 2024.</p>
+        </div>
+
+        <!-- Footer Info -->
+        <div class="flex flex-col gap-2 text-gray-300">
+          <p>© 2025 SwipeSquad. All rights reserved.</p>
+          <p>Made with 💚 by Fabuzard</p>
+          <p>Terms & Conditions | Privacy Policy</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

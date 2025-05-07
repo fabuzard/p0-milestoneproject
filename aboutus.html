@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About us</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="h-full flex flex-col">
@@ -130,31 +130,40 @@
    <!-- Insert main here -->
    <section id="main" class="px-4 py-36 text-white flex flex-col md:flex-row bg-gray-200 justify-center gap-20 items-center p-4 text-center md:px-8 lg:px-16 flex-grow">
     <div id="left-wrapper" class="flex flex-col gap-10">
-        <h2
-          class="text-black text-2xl md:text-3xl md:text-left lg:text-4xl font-bold mb-4"
-        >
-          About SwipeSquad
-        </h2>
-        <p class="text-gray-700 max-w-md mx-auto md: text-left">
-          We are a bunch of professional cleaner who clean stuffs for a living and pretty good at it!
-        </p>
-
-        <!-- Button wrapper div -->
-        <div id="btn-wrapper" class="flex gap-10">
-          <button class="bg-green-500 font-bold py-2 px-4 rounded-xl">
-            About Us
-          </button>
-
-          <button
-            class="border-2 text-green-500 border-green-500 font-bold py-2 px-4 rounded-xl"
-          >
-            View All Services
-          </button>
-        </div>
+      <h2 class="text-black text-2xl md:text-3xl md:text-left lg:text-4xl font-bold mb-4">
+        About SwipeSquad
+      </h2>
+  
+      <p class="text-gray-700 max-w-md text-center mx-auto md:mx-0 md:text-left">
+        We’re SwipeSquad – a team of passionate, trained professionals who believe cleanliness is more than just a job — it's our calling. From homes to offices, we take pride in delivering spotless spaces and satisfied smiles.
+      </p>
+  
+      <div class="text-gray-600 text-sm md:text-left space-y-2">
+        <p><strong>🎯 Mission:</strong> To provide affordable, high-quality cleaning services that bring comfort and peace of mind to every client.</p>
+        <p><strong>🏆 Experience:</strong> Over 5 years of cleaning excellence across hundreds of homes and businesses.</p>
+        <p><strong>🌟 Satisfaction Rate:</strong> 98% of our customers rebook after their first clean.</p>
       </div>
-
-      <img src="./assets/aboutus.png" class="max-h-60" alt="" />
+  
+      <!-- Button wrapper -->
+      <div id="btn-wrapper" class="flex gap-6 mt-4 justify-center md:justify-start">
+        <button class="bg-green-500 font-bold py-2 px-4 rounded-xl hover:bg-green-600 transition">
+          About Us
+        </button>
+        <button class="border-2 text-green-500 border-green-500 font-bold py-2 px-4 rounded-xl hover:bg-green-100 transition">
+          View All Services
+        </button>
+      </div>
+    </div>
+  
+    <!-- Right image & team highlight -->
+    <div class="flex flex-col items-center">
+      <img src="./assets/aboutus.png" class="max-h-60 rounded-lg shadow-lg mb-6" alt="About Us" />
+      <p class="text-sm text-gray-600 max-w-xs text-center">
+        Meet our expert crew — trained, trusted, and ready to make your space shine.
+      </p>
+    </div>
   </section>
+  
   
 
       <footer
