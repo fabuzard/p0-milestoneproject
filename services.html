@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="h-full flex flex-col">
     <!-- Header Section -->
     <header
       class="px-4 md:px-8 lg:px-16 py-4 flex justify-between items-center h-16 relative"
@@ -31,23 +31,23 @@
             >
           </li>
           <li>
-            <a href="#gallery" class="text-gray-800 hover:text-green-500"
+            <a href="./gallery.html" class="text-gray-800 hover:text-green-500"
               >Gallery</a
             >
           </li>
           <li>
-            <a href="#aboutus" class="text-gray-800 hover:text-green-500"
+            <a href="./aboutus.html" class="text-gray-800 hover:text-green-500"
               >About Us</a
             >
           </li>
           <li>
-            <a href="#contactus" class="text-gray-800 hover:text-green-500"
+            <a href="./contactus.html" class="text-gray-800 hover:text-green-500"
               >Contact Us</a
             >
           </li>
           <li>
-            <a href="#extra" class="text-gray-800 hover:text-green-500"
-              >Extra</a
+            <a href="./calculate.html" class="text-gray-800 hover:text-green-500"
+              >Calculate</a
             >
           </li>
           <li>
@@ -129,67 +129,89 @@
     </header>
 
     <!-- services main section -->
-    <section id="services-main" class="mx-36 py-20">
-      <div id="top-context" class="flex justify-center gap-40 border-b-2 pb-5">
-        <h1 class="font-bold text-4xl max-w-md">
+    <section id="services-main" class="px-4 py-8 md:px-8 lg:px-16 flex-grow">
+
+      <div id="top-context" class="flex flex-col md:flex-row md:justify-center items-center text-center gap-6 md:gap-20 border-b-2 pb-10">
+        
+        <h1 class="font-bold text-3xl md:text-4xl md:text-left max-w-xl">
           We Always Provide The Best Service
         </h1>
-        <div id="text-container" class="text-left">
-          <h3 class="text-xl font-semibold">Services</h3>
-          <p class="text-gray-500 max-w-md">
-            While we can customize your cleaning plan to suit your needs. most
-            clients schedule regular cleaning services.
+        
+        <div id="text-container" class="max-w-md md:text-left">
+          <h3 class="text-xl font-semibold mb-2">Services</h3>
+          <p class="text-gray-500">
+            While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services.
           </p>
         </div>
+    
       </div>
+    <!-- Services types card -->
+<div id="Services card" class="my-20 flex flex-col md:flex-row flex-wrap gap-10 justify-center items-center">
 
-      <!-- Services types card -->
-      <div id="Services card" class="my-20 flex gap-20 justify-center">
+  <div class="max-w-xs flex flex-col gap-4">
+    <img src="./assets/services1.png" alt="Office Cleaning" />
+    <h3 class="font-bold text-xl">Office Cleaning</h3>
+    <p class="text-sm text-gray-500">
+      While we can customize your cleaning plan to suit your needs, most
+      clients schedule regular cleaning services:
+    </p>
+    <button
+      class="border-2 text-green-500 border-green-500 font-bold py-2 px-4 rounded-xl"
+    >
+      Book Now
+    </button>
+  </div>
 
-        <div class="max-w-80 flex flex-col gap-4">
-          <img src="./assets/services1.png" alt="" />
-          <h3 class="font-bold text-xl">Office Cleaning</h3>
-          <p class="text-sm text-gray-500">
-            While we can customize your cleaning plan to suit your needs, most
-            clients schedule regular cleaning services:
-          </p>
-          <button
-          class="border-2 text-green-500 border-green-500 font-bold py-2 px-4 rounded-xl"
-        >
-          Book Now
-        </button>
-        </div>
+  <div class="max-w-xs flex flex-col gap-4">
+    <img src="./assets/services2.png" alt="Spring Cleaning" />
+    <h3 class="font-bold text-xl">Spring Cleaning</h3>
+    <p class="text-sm text-gray-500">
+      While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:
+    </p>
+    <button
+      class="border-2 text-green-500 border-green-500 font-bold py-2 px-4 rounded-xl"
+    >
+      Book Now
+    </button>
+  </div>
 
-        <div class="max-w-80 flex flex-col gap-4">
-            <img src="./assets/services2.png" alt="" />
-            <h3 class="font-bold text-xl">Spring Cleaning</h3>
-            <p class="text-sm text-gray-500">
-                While we can customize your cleaning plan to suit your needs, most clients schedule regular cleaning services:
-            </p>
-            <button
-            class="border-2 text-green-500 border-green-500 font-bold py-2 px-4 rounded-xl"
-          >
-            Book Now
-          </button>
-          </div>
+  <div class="max-w-xs flex flex-col gap-4">
+    <img src="./assets/services3.png" alt="House Cleaning" />
+    <h3 class="font-bold text-xl">House Cleaning</h3>
+    <p class="text-sm text-gray-500">
+      While we can customize your cleaning plan to suit your needs, most
+      clients schedule regular cleaning services:
+    </p>
+    <button
+      class="border-2 text-green-500 border-green-500 font-bold py-2 px-4 rounded-xl"
+    >
+      Book Now
+    </button>
+  </div>
 
-          <div class="max-w-80 flex flex-col gap-4">
-            <img src="./assets/services3.png" alt="" />
-            <h3 class="font-bold text-xl">House Cleaning</h3>
-            <p class="text-sm text-gray-500">
-              While we can customize your cleaning plan to suit your needs, most
-              clients schedule regular cleaning services:
-            </p>
-            <button
-            class="border-2 text-green-500 border-green-500 font-bold py-2 px-4 rounded-xl"
-          >
-            Book Now
-          </button>
-          </div>
-  
+</div>
 
-
-      </div>
     </section>
+<!-- footer section -->
+    <footer
+    class="bg-green-900 px-4 md:px-8 lg:px-16 py-8 text-white"
+  >
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6 text-sm">
+      <!-- Company Info -->
+      <div class="flex flex-col gap-2">
+        <h1 class="text-xl text-green-400 font-bold">SwipeSquad</h1>
+        <p>Cleaning Service Company</p>
+        <p>Making your space shine since 2024.</p>
+      </div>
+  
+      <!-- Footer Info -->
+      <div class="flex flex-col gap-2 text-gray-300">
+        <p>© 2025 SwipeSquad. All rights reserved.</p>
+        <p>Made with 💚 by Fabuzard</p>
+        <p>Terms & Conditions | Privacy Policy</p>
+      </div>
+    </div>
+  </footer>
+  
   </body>
 </html>

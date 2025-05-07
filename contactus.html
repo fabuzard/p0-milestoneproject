@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-full flex flex-col">
+    <!-- Header Section -->
+    <header
+      class="px-4 md:px-8 lg:px-16 py-4 flex justify-between items-center h-16 relative"
+    >
+      <!-- Logo and tagline -->
+      <div id="logo" class="flex flex-col">
+        <h1 class="text-xl text-green-500 font-bold">SwipeSquad</h1>
+        <p class="text-gray-500 text-sm">Cleaning Service Company</p>
+      </div>
+
+      <!-- Desktop Navigation Links (hidden on mobile) -->
+      <nav class="hidden md:block">
+        <ul class="flex space-x-4 lg:space-x-8 text-base lg:text-lg">
+          <li>
+            <a href="./index.html" class="text-gray-800 hover:text-green-500"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="./services.html" class="text-gray-800 hover:text-green-500"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="./gallery.html" class="text-gray-800 hover:text-green-500"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a href="./aboutus.html" class="text-gray-800 hover:text-green-500"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="./contactus.html"
+              class="text-gray-800 hover:text-green-500"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="./calculate.html"
+              class="text-gray-800 hover:text-green-500"
+              >Calculate</a
+            >
+          </li>
+          <li>
+            <a href="./login.html" class="text-gray-800 hover:text-green-500"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile menu button (visible only on mobile) -->
+      <button
+        id="menu-toggle"
+        class="md:hidden text-gray-800 focus:outline-none"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          ></path>
+        </svg>
+      </button>
+
+      <!-- Mobile menu (hidden by default) -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute top-16 right-0 left-0 bg-white shadow-md z-10"
+      >
+        <ul class="py-2 px-4">
+          <li class="py-2 border-b border-gray-100">
+            <a href="#home" class="text-gray-800 hover:text-green-500 block"
+              >Home</a
+            >
+          </li>
+          <li class="py-2 border-b border-gray-100">
+            <a
+              href="./services.html"
+              class="text-gray-800 hover:text-green-500 block"
+              >Services</a
+            >
+          </li>
+          <li class="py-2 border-b border-gray-100">
+            <a
+              href="./gallery.html"
+              class="text-gray-800 hover:text-green-500 block"
+              >Gallery</a
+            >
+          </li>
+          <li class="py-2 border-b border-gray-100">
+            <a
+              href="./aboutus.html"
+              class="text-gray-800 hover:text-green-500 block"
+              >About Us</a
+            >
+          </li>
+          <li class="py-2 border-b border-gray-100">
+            <a
+              href="./contactus.html"
+              class="text-gray-800 hover:text-green-500 block"
+              >Contact Us</a
+            >
+          </li>
+          <li class="py-2 border-b border-gray-100">
+            <a
+              href="./calculate.html"
+              class="text-gray-800 hover:text-green-500 block"
+              >Calculate</a
+            >
+          </li>
+          <li class="py-2">
+            <a
+              href="./login.html"
+              class="text-gray-800 hover:text-green-500 block"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Insert main here -->
+    <section
+    id="main"
+    class="px-4 py-8 md:px-8 lg:px-16 flex-grow flex flex-col items-center"
+  >
+    <div class="flex flex-col lg:flex-row justify-between items-start w-full max-w-4xl gap-12">
+      <!-- Contact Info -->
+      <div class="flex-1">
+        <h1 class="text-2xl font-bold">Contact Us</h1>
+  
+        <div class="mt-6 space-y-4">
+          <div>
+            <h3 class="font-semibold">Whatsapp</h3>
+            <p class="text-gray-600">+(62) 811 1222 33</p>
+          </div>
+  
+          <div>
+            <h3 class="font-semibold">Instagram</h3>
+            <p class="text-gray-600">@ilovecleaning</p>
+          </div>
+  
+          <div>
+            <h3 class="font-semibold">Line</h3>
+            <p class="text-gray-600">SwipeSquad</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Reach Us + Form -->
+      <div class="flex-1">
+        <h1 class="text-2xl font-bold mb-2">Reach Us</h1>
+        <p class="text-gray-600 mb-6">
+          We prioritize responding to your inquiries promptly to ensure you
+          receive the assistance you need in a timely manner.
+        </p>
+  
+        <!-- Form here -->
+        <form class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Your name"
+              required
+            />
+          </div>
+  
+          <div>
+            <label for="email" class="block text-sm font-medium">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
+  
+          <div>
+            <label for="message" class="block text-sm font-medium">Message</label>
+            <textarea
+              id="message"
+              rows="4"
+              class="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+  
+          <button
+            type="submit"
+            class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+    <footer class="bg-green-900 px-4 md:px-8 lg:px-16 py-8 text-white">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6 text-sm"
+      >
+        <!-- Company Info -->
+        <div class="flex flex-col gap-2">
+          <h1 class="text-xl text-green-400 font-bold">SwipeSquad</h1>
+          <p>Cleaning Service Company</p>
+          <p>Making your space shine since 2024.</p>
+        </div>
+
+        <!-- Footer Info -->
+        <div class="flex flex-col gap-2 text-gray-300">
+          <p>© 2025 SwipeSquad. All rights reserved.</p>
+          <p>Made with 💚 by Fabuzard</p>
+          <p>Terms & Conditions | Privacy Policy</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

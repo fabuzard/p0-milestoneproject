@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fbz Cleaning</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      // Mobile menu toggle functionality
-      function toggleMenu() {
-        const mobileMenu = document.getElementById("mobile-menu");
-        mobileMenu.classList.toggle("hidden");
-      }
+</head>
+<body class="h-full flex flex-col">
 
-      // Add event listener after DOM is loaded
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuButton = document.getElementById("menu-toggle");
-        menuButton.addEventListener("click", toggleMenu);
-      });
-    </script>
-  </head>
-  <body class="bg-gray-100">
     <!-- Header Section -->
     <header
       class="px-4 md:px-8 lg:px-16 py-4 flex justify-between items-center h-16 relative"
@@ -34,7 +22,7 @@
       <nav class="hidden md:block">
         <ul class="flex space-x-4 lg:space-x-8 text-base lg:text-lg">
           <li>
-            <a href="#home" class="text-gray-800 hover:text-green-500">Home</a>
+            <a href="./index.html" class="text-gray-800 hover:text-green-500">Home</a>
           </li>
           <li>
             <a href="./services.html" class="text-gray-800 hover:text-green-500"
@@ -139,20 +127,16 @@
       </div>
     </header>
 
-    <!-- Main Section -->
-    <section
-      id="main"
-      class="py-36 text-white flex flex-col md:flex-row bg-gray-200 justify-center gap-20 items-center p-4 text-center"
-    >
-      <div id="left-wrapper" class="flex flex-col gap-10">
+   <!-- Insert main here -->
+   <section id="main" class="px-4 py-36 text-white flex flex-col md:flex-row bg-gray-200 justify-center gap-20 items-center p-4 text-center md:px-8 lg:px-16 flex-grow">
+    <div id="left-wrapper" class="flex flex-col gap-10">
         <h2
           class="text-black text-2xl md:text-3xl md:text-left lg:text-4xl font-bold mb-4"
         >
-          Welcome to SwipeSquad
+          About SwipeSquad
         </h2>
         <p class="text-gray-700 max-w-md mx-auto md: text-left">
-          We Provide Performing cleaning tasks using the least amount of time,
-          energy, and money.
+          We are a bunch of professional cleaner who clean stuffs for a living and pretty good at it!
         </p>
 
         <!-- Button wrapper div -->
@@ -169,78 +153,11 @@
         </div>
       </div>
 
-      <img src="./assets/hero.jpg" class="max-h-60" alt="" />
-    </section>
-
-     <!-- services main section -->
-     <section id="services-main" class="mx-36 py-20">
-      <div id="top-context" class="flex justify-center gap-40 border-b-2 pb-5">
-        <h1 class="font-bold text-4xl max-w-md">
-          We Always Provide The Best Service
-        </h1>
-        <div id="text-container" class="text-left">
-          <h3 class="text-xl font-semibold">Services</h3>
-          <p class="text-gray-500 max-w-md">
-            While we can customize your cleaning plan to suit your needs. most
-            clients schedule regular cleaning services.
-          </p>
-        </div>
-      </div>
-
-      <!-- Services types card -->
-      <div id="Services card" class="my-20 flex gap-20 justify-center">
-
-        <div class="max-w-80 flex flex-col gap-4">
-          <img src="./assets/services1.png" alt="" />
-          <h3 class="font-bold text-xl">Office Cleaning</h3>
-          <p class="text-sm text-gray-500">
-            While we can customize your cleaning plan to suit your needs, most
-            clients schedule regular cleaning services:
-          </p>
-          <button
-          class="border-2 text-green-500 border-green-500 font-bold py-2 px-4 rounded-xl"
-        >
-          Book Now
-        </button>
-        </div>
-
-        <div class="max-w-80 flex flex-col gap-4">
-            <img src="./assets/services1.png" alt="" />
-            <h3 class="font-bold text-xl">Office Cleaning</h3>
-            <p class="text-sm text-gray-500">
-              While we can customize your cleaning plan to suit your needs, most
-              clients schedule regular cleaning services:
-            </p>
-            <button
-            class="border-2 text-green-500 border-green-500 font-bold py-2 px-4 rounded-xl"
-          >
-            Book Now
-          </button>
-          </div>
-
-          <div class="max-w-80 flex flex-col gap-4">
-            <img src="./assets/services1.png" alt="" />
-            <h3 class="font-bold text-xl">Office Cleaning</h3>
-            <p class="text-sm text-gray-500">
-              While we can customize your cleaning plan to suit your needs, most
-              clients schedule regular cleaning services:
-            </p>
-            <button
-            class="border-2 text-green-500 border-green-500 font-bold py-2 px-4 rounded-xl"
-          >
-            Book Now
-          </button>
-          </div>
+      <img src="./assets/aboutus.png" class="max-h-60" alt="" />
+  </section>
   
 
-
-      </div>
-    </section>
-
-
-    <!-- Footer -->
-
-    <footer
+      <footer
     class="bg-green-900 px-4 md:px-8 lg:px-16 py-8 text-white"
   >
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-6 text-sm">
@@ -260,6 +177,6 @@
     </div>
   </footer>
   
-
-  </body>
+  
+</body>
 </html>
